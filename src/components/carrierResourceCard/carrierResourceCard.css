@@ -1,0 +1,17 @@
+.CarrierResourceCardContainer {
+  background-color: rgb(245, 222, 179, 0.6);
+  margin: 10px;
+  padding: 10px 20px;
+  height: 20%;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 4px 9px 0 #00000033;
+  transition: all 0.5s ease;
+}
+.CarrierResourceCardContainer:hover {
+  background-color: rgb(245, 222, 179);
+  box-shadow: 0 10px 11px 0 rgb(0, 0, 0, 0.2);
+}

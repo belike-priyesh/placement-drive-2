@@ -1,0 +1,25 @@
+.HomeContainer {
+  flex: 1;
+  display: flex;
+  min-height: 100%;
+  background-image: url("../../assets/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.social-icons-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 16px;
+  top: 40%;
+}
+@media only screen and (max-width: 720px) {
+  .social-icons-container {
+    right: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content: center;
+    top: auto;
+    bottom: 0;
+  }
+}

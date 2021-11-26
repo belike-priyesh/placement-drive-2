@@ -1,0 +1,45 @@
+.appointment-form-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow-y: scroll;
+}
+.appointment-form * {
+  margin-top: 10px;
+  flex: 1;
+}
+.appointment-form {
+  padding: 0px 25px 20px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.app-form-name-cont {
+  display: flex;
+  flex-direction: row;
+}
+.app-form-name-cont > div:last-child {
+  margin-left: 10px;
+}
+.appointment-form-button-cont {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 20% 10px 20%;
+  justify-content: center;
+}
+.appointment-form-button-cont > * {
+  width: 15ch;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 950px) {
+  .app-form-name-cont {
+    flex-direction: column;
+  }
+  .app-form-name-cont > div:last-child {
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,54 @@
+.Header > span {
+  position: absolute;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 50px;
+  justify-content: space-around;
+}
+.NavLink {
+  font-weight: 500;
+  display: flex;
+  min-width: 8vw;
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 46px;
+  background-color: white;
+  border-radius: 100px;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+.NavLink:hover {
+  background-color: rgba(209, 31, 31);
+  color: white;
+  font-weight: 600;
+}
+.ActiveTab {
+  background-color: rgba(209, 31, 31);
+  color: white;
+}
+#ham-icon {
+  font-size: 3em;
+  display: none;
+}
+
+@media only screen and (max-width: 720px) {
+  .Header > span {
+    display: none;
+  }
+  #ham-icon {
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 10px 11px 0 rgb(0, 0, 0, 0.2);
+  }
+  #ham-icon #hamburger {
+    font-size: 3em;
+  }
+}

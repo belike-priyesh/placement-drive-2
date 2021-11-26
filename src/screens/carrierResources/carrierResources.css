@@ -1,0 +1,16 @@
+.CompanyResourceContainer {
+  flex: 1;
+  padding: 5% 0px 20px 20px;
+  display: flex;
+  flex-direction: row;
+  background-color: #fce4ecaa;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  align-content: flex-start;
+}
+/* @media only screen and (max-width: 480px) {
+  .CompanyResourceContainer {
+    justify-content: center;
+  }
+} */

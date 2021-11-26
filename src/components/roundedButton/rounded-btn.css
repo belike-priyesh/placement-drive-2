@@ -1,0 +1,17 @@
+.RoundedBtnContainer {
+  display: flex;
+  min-width: 8vw;
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 46px;
+  background-color: white;
+  border-radius: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.RoundedBtnContainer:hover {
+  background-color: rgba(209, 31, 31);
+  color: white;
+}

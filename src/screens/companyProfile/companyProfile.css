@@ -1,0 +1,41 @@
+.CompanyProfileContainer {
+  flex: 1;
+  padding: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fce4ecaa;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.company-card-container {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#searchCompany {
+  height: 48px;
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 100px;
+  text-align: center;
+  align-self: center;
+  font-size: 1.2em;
+}
+.search-container {
+  margin-bottom: 30px;
+  width: 60%;
+  text-align: center;
+}
+.company_table th {
+  font-size: 1.5em;
+  background-color: lightgrey;
+  padding: 8px 12px;
+}
+.company_table td {
+  font-size: 1.5em;
+  background-color: lightblue;
+  min-width: 100px;
+  padding: 8px 12px;
+  text-align: center;
+}
