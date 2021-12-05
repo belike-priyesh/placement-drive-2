@@ -1,5 +1,4 @@
 import React, { useState, useCallback, useContext } from "react";
-import {auth} from '../firebase' 
 export const AuthContext = React.createContext(false);
 
 export const AuthProvider = ({ children }) => {
@@ -8,11 +7,6 @@ export const AuthProvider = ({ children }) => {
     setAuthModalVisibility(!authModalVisibility);
   }, [authModalVisibility]);
 
-
-
-
-
-  
   return (
     <AuthContext.Provider value={{ authModalVisibility, toggleAuthModal }}>
       {children}

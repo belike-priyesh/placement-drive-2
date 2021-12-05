@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./routes";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-
+import "../src/firebase";
 const rootElement = document.getElementById("root");
 
 render(

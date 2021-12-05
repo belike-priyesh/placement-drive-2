@@ -10,6 +10,8 @@ import { NavLink } from "react-router-dom";
 import List from "@material-ui/core/List";
 import { withStyles } from "@material-ui/core/styles";
 import { Tabs } from "../../constants";
+import { useAuth } from "../../screens/auth/context";
+import { getAuth } from "@firebase/auth";
 const styles = {
   paper: {},
 };
@@ -31,6 +33,7 @@ const ListItem = ({ title = "" }) => (
 );
 const Drawer = forwardRef((props, ref) => {
   const [visibility, setVisibility] = useState(false);
+  const { isLoggedIn } = useAuth();
   const toggleDrawer = useCallback(() => {
     setVisibility((prev) => !prev);
   }, []);
@@ -72,15 +75,21 @@ const Drawer = forwardRef((props, ref) => {
                   </NavLink>
                 );
               } else {
+                const newTitle =
+                  isLoggedIn && title === "Sign-In" ? "Logout" : title;
                 return (
                   <span
                     key={title}
                     className="drawer-nav-link-cont"
                     onClick={() => {
-                      props.onClick?.("sign-in");
+                      if (isLoggedIn) {
+                        getAuth().signOut();
+                      } else {
+                        props.onClick?.("sign-in");
+                      }
                     }}
                   >
-                    <ListItem title={title} />
+                    <ListItem title={newTitle} />
                   </span>
                 );
               }
